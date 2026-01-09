@@ -17,13 +17,10 @@ public class ExceptionFilter : IExceptionFilter
 
     private void HandleProjectException(BarberBossException barberBossException, ExceptionContext context)
     {
-        if (context.Exception is ErrorOnValidationException errorOnValidationException)
-        {
-            var errorResponse = new ResponseErrorJson(errorOnValidationException.GetErrors());
+        var errorResponse = new ResponseErrorJson(barberBossException.GetErrors());
 
-            context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
-            context.Result = new ObjectResult(errorResponse);
-        }
+        context.HttpContext.Response.StatusCode = barberBossException.StatusCode;
+        context.Result = new ObjectResult(errorResponse);
     }
 
     private void ThrowUnkowError(ExceptionContext context)

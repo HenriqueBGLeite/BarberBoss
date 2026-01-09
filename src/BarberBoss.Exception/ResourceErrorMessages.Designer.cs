@@ -79,6 +79,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Billing not found..
+        /// </summary>
+        public static string BILLING_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("BILLING_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The billings is required..
         /// </summary>
         public static string BILLING_REQUIRED {
@@ -111,6 +120,15 @@ namespace BarberBoss.Exception {
         public static string PAYMENT_METHOD_INVALID {
             get {
                 return ResourceManager.GetString("PAYMENT_METHOD_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment status invalid..
+        /// </summary>
+        public static string PAYMENT_STATUS_INVALID {
+            get {
+                return ResourceManager.GetString("PAYMENT_STATUS_INVALID", resourceCulture);
             }
         }
         
