@@ -35,7 +35,7 @@ public class GenerateBillingReportExcelUseCase : IGenerateBillingReportExcelUseC
         foreach (var billing in billings)
         {
             worksheet.Cell($"A{row}").Value = billing.ServiceName;
-            worksheet.Cell($"B{row}").Value = billing.Date.ToDateTime(TimeOnly.MinValue);
+            worksheet.Cell($"B{row}").Value = billing.Date;
             worksheet.Cell($"C{row}").Value = billing.PaymentMethod.PaymentMethodToString();
 
             worksheet.Cell($"D{row}").Value = billing.Amount;

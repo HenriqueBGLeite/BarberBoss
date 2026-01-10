@@ -120,6 +120,9 @@
   <data name="AMOUNT" xml:space="preserve">
     <value>Amount</value>
   </data>
+  <data name="BILLING_AT_MONTH" xml:space="preserve">
+    <value>Billing at month</value>
+  </data>
   <data name="CASH" xml:space="preserve">
     <value>Cash</value>
   </data>
@@ -138,10 +141,16 @@
   <data name="ELETRONIC_TRANSFER" xml:space="preserve">
     <value>Eletronic Transfer</value>
   </data>
+  <data name="OF" xml:space="preserve">
+    <value>of</value>
+  </data>
   <data name="PAYMENT_METHOD" xml:space="preserve">
     <value>Payment Method</value>
   </data>
   <data name="SERVICE" xml:space="preserve">
     <value>Service</value>
+  </data>
+  <data name="WEEKLY_BILLING" xml:space="preserve">
+    <value>Weekly billing</value>
   </data>
 </root>

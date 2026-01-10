@@ -70,6 +70,15 @@ namespace BarberBoss.Domain.Reports {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Billing at month.
+        /// </summary>
+        public static string BILLING_AT_MONTH {
+            get {
+                return ResourceManager.GetString("BILLING_AT_MONTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cash.
         /// </summary>
         public static string CASH {
@@ -124,6 +133,15 @@ namespace BarberBoss.Domain.Reports {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to of.
+        /// </summary>
+        public static string OF {
+            get {
+                return ResourceManager.GetString("OF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Payment Method.
         /// </summary>
         public static string PAYMENT_METHOD {
@@ -138,6 +156,15 @@ namespace BarberBoss.Domain.Reports {
         public static string SERVICE {
             get {
                 return ResourceManager.GetString("SERVICE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weekly billing.
+        /// </summary>
+        public static string WEEKLY_BILLING {
+            get {
+                return ResourceManager.GetString("WEEKLY_BILLING", resourceCulture);
             }
         }
     }
