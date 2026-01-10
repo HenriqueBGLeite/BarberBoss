@@ -4,7 +4,7 @@ namespace BarberBoss.Communication.Requests;
 
 public class RequestBillingJson
 {
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
     public string BarberName { get; set; } = string.Empty;
     public string ClientName { get; set; } = string.Empty;
     public string ServiceName { get; set; } = string.Empty;
